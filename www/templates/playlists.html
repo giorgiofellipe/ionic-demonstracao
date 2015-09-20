@@ -1,0 +1,11 @@
+<ion-view view-title="Playlists">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{$index}}">
+        {{playlist.title}}
+        <p>Songs: {{ playlist.songs.length }}</p>
+        <ion-option-button ng-click="showShareOptions()">Share</ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

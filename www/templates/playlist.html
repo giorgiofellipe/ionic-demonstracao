@@ -1,0 +1,10 @@
+<ion-view view-title="Playlists">
+  <ion-content>
+    <ion-list>
+      <ion-item collection-repeat="song in songs">
+        {{song.title}}
+        <p>Length: {{ song.length }}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
